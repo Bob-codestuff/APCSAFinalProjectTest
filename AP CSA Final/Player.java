@@ -17,19 +17,12 @@ public class Player {
         hand.clear();
     }
 
-    public ArrayList<Card> getHand() {
-        return hand;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void showHand() {
-        System.out.println(name + "'s Hand:");
-        for (Card c : hand) {
-            System.out.println("  " + c);
-        }
+    @Override
+    public String toString() {
+        return name + "'s hand: " + hand;
     }
 }
-

@@ -9,14 +9,6 @@ public class Card {
         this.value = value;
     }
 
-    public String getSuit() {
-        return suit;
-    }
-
-    public String getFace() {
-        return face;
-    }
-
     public int getValue() {
         return value;
     }
