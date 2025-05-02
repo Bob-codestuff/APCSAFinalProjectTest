@@ -1,28 +1,34 @@
-import java.util.ArrayList;
-
 public class Player {
     private String name;
-    private ArrayList<Card> hand;
+    private double money; // Player's total money
 
     public Player(String name) {
         this.name = name;
-        this.hand = new ArrayList<>();
-    }
-
-    public void addCard(Card card) {
-        hand.add(card);
-    }
-
-    public void clearHand() {
-        hand.clear();
+        this.money = 100.0; // Start with $100
     }
 
     public String getName() {
         return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getMoney() {
+        return money;
+    }
+
+    public void addMoney(double amount) {
+        this.money += amount;
+    }
+
+    public void subtractMoney(double amount) {
+        this.money -= amount;
+    }
+
     @Override
     public String toString() {
-        return name + "'s hand: " + hand;
+        return name + " has $" + String.format("%.2f", money);
     }
 }
