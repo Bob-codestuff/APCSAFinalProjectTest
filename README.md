@@ -1,18 +1,20 @@
 # APCSAFinalProjectTest
 Higher or Lower Game
-This project is a console-based card game called Higher or Lower, where the player bets money on whether the next card will be higher or lower than the current card. The game includes features such as betting, doubling winnings, and saving the player's money between rounds. The game ends when the player runs out of money.
+This project is about the card game Higher or Lower, where the player gets a card from dealer and decides to either double their money by predicting if the next card is higher or lower than the card given. The game ends if the player decides to end it, or
+if the player runs out of money. 
 
 How to Play
 The player starts with $100.
 At the beginning of each round, the player chooses how much money to bet.
 A card is dealt, and the player guesses whether the next card will be higher or lower.
 If the player guesses correctly, their bet doubles.
-If the player guesses incorrectly, they lose their bet.
+If the player guesses incorrectly, they lose the bet they put in.
 The player can leave the game mid-round and start another game later.
-The game ends entirely when the player runs out of money.
+The game ends entirely when the player runs out of money or leaves ends the game.
+
+
+
 Classes
-
-
 
 1. Card
 The Card class represents a single playing card.
@@ -31,8 +33,6 @@ getAsciiArt(): Returns an ASCII art representation of the card.
 
 
 
-
-
 2. Deck
 The Deck class represents a standard deck of 52 playing cards.
 
@@ -45,8 +45,6 @@ Deck(): Initializes a shuffled deck of 52 cards.
 shuffle(): Shuffles the deck.
 dealCard(): Deals the top card from the deck.
 cardsLeft(): Returns the number of cards left in the deck.
-
-
 
 
 
@@ -66,8 +64,6 @@ cardsLeft(): Returns the number of cards left in the deck.
 
 
 
-
-
 4. Player
 The Player class represents the player in the game.
 
@@ -83,8 +79,6 @@ setName(String name): Sets the player's name.
 getMoney(): Returns the player's current money.
 addMoney(double amount): Adds money to the player's total.
 subtractMoney(double amount): Subtracts money from the player's total.
-
-
 
 
 
@@ -172,5 +166,6 @@ Thanks for playing, John! You leave with $150.00.
 
 Future Improvements
 Add a leaderboard to track the highest winnings.
-Implement additional game modes or challenges.
+Fix it so that the player can't just leave the game right when the first card is delt.
 Add a graphical user interface (GUI) for better user experience.
+Make it so that the suits are also included to whether the card is higher or lower.
