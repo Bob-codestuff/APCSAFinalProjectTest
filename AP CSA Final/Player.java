@@ -1,10 +1,17 @@
+/**
+ * The Player class represents a player in a game.
+ * Each player has a name and starts with a default amount of money.
+ * This class provides functionality to initialize a player with a name,
+ * manage their money, and perform operations such as adding or subtracting money.
+ */
 public class Player {
     private String name;
     private double money; // Player's total money
 
+
     public Player(String name) {
         this.name = name;
-        this.money = 100.0; // Start with $100
+        this.money = 100.0; 
     }
 
     public String getName() {

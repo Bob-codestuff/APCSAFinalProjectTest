@@ -1,3 +1,16 @@
+/**
+ * The Card class represents a playing card with a suit, face, and value.
+ * It provides methods to retrieve the card's attributes and generate an ASCII art
+ * representation of the card. The ASCII art includes the card's face and a visual
+ * depiction of its suit (Hearts, Diamonds, Clubs, or Spades).
+ * 
+ * Key Features:
+ * - Stores the suit, face, and value of the card.
+ * - Generates an ASCII art representation based on the card's attributes.
+ * - Supports abbreviated face values for King, Queen, Jack, and Ace.
+ * 
+ */
+// This is a class definition for a playing card representation.
 public class Card {
     private String suit;
     private String face;

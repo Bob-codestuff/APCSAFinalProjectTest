@@ -1,3 +1,14 @@
+/**
+ * The Deck class represents a standard deck of playing cards.
+ * It provides functionality to initialize the deck with 52 cards,
+ * shuffle the deck, deal a card, and check the number of cards left in the deck.
+ * 
+ * The deck consists of cards with four suits ("Hearts", "Diamonds", "Clubs", "Spades"),
+ * thirteen faces ("2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", "Ace"),
+ * and corresponding values (2 through 14).
+ * 
+ * This class uses an ArrayList to store the cards and provides methods to manipulate the deck.
+ */
 import java.util.ArrayList;
 import java.util.Collections;
 

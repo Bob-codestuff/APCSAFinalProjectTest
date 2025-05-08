@@ -1,3 +1,19 @@
+
+/**
+ * The Game class implements a "Higher or Lower" card game where a player 
+ * competes against a dealer. The player bets money and guesses whether 
+ * the next card will be higher or lower than the current card.
+ * 
+ * The game manages player interactions, betting logic, and card dealing. 
+ * It continues until the player chooses to exit or runs out of money. 
+ * The dealer resets the deck for each new game session.
+ * 
+ * Key features include:
+ * - Handling player bets and winnings.
+ * - Managing game flow and user input.
+ * - Displaying cards using ASCII art.
+ * - Ensuring proper deck management.
+ */
 import java.util.Scanner;
 
 public class Game {

@@ -1,3 +1,10 @@
+
+/**
+ * The Dealer class represents a dealer in a card game, extending the Player class.
+ * It manages a deck of cards and provides functionality to deal cards, reset the deck, 
+ * and check the number of cards left in the deck.
+ * This class is designed to interact with the Deck and Card classes.
+ */
 public class Dealer extends Player {
     private Deck deck;
 
