@@ -31,8 +31,10 @@ public class Game {
         String name = scanner.nextLine();
         player = new Player(name); // Initialize the player with their chosen name
         System.out.println("Welcome to Higher or Lower, " + player.getName() + "!");
+        dealer.setName("Eleanor");
+        System.out.println("You will be playing the the dealer, " + dealer.getName() + ".");
         System.out.println("You are starting with $" + String.format("%.2f", player.getMoney()) + ".");
-        System.out.println("You are playing against " + dealer.getName() + ".");
+        System.out.println("Good luck!");
 
         boolean playing = true;
         while (playing) {

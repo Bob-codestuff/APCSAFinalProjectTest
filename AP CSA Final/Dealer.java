@@ -7,10 +7,19 @@
  */
 public class Dealer extends Player {
     private Deck deck;
+    private String name;
 
     public Dealer(String name) {
         super(name); // Use the constructor of the Player class to set the name
         this.deck = new Deck();
+    }
+
+    public String getName() {
+        return super.getName();
+    }
+
+    public void setName(String name){
+        super.setName(name);
     }
 
     public Card dealCard() {
