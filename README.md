@@ -169,3 +169,8 @@ Add a leaderboard to track the highest winnings.
 Fix it so that the player can't just leave the game right when the first card is delt.
 Add a graphical user interface (GUI) for better user experience.
 Make it so that the suits are also included to whether the card is higher or lower.
+
+
+
+Flow Chart:
+https://drive.google.com/file/d/1zwNcrbMdqYLfoYMywG4CwD7MBqoOWh_x/view?usp=sharing
